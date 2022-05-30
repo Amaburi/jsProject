@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="star.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+           
+            <a href="" ><img src="asset/logo.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Meni</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Test Out Our New Products.</h2>
+                <p>Our latest Products are GreenTea with extra flavor,Red Velvet made Red Velvet itself,
+                    And last but not least our cherry blossom Tea.
+                </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="asset/img1.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="asset/thumb1.png" onclick="imgSlider('asset/img1.png');changecolor('#017143')" alt=""></li>
+            <li><img src="asset/thumb2.png" onclick="imgSlider('asset/img2.png');changecolor('#eb7495')" alt=""></li>
+            <li><img src="asset/thumb3.png" onclick="imgSlider('asset/img3.png');changecolor('#d752b1')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><a href=""><img src="asset/facebook.png" alt=""></a>
+            <li><a href=""><img src="asset/twitter.png" alt=""></a>
+            <li><a href=""><img src="asset/instagram.png" alt=""></a>
+                    
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
