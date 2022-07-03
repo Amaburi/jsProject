@@ -6,8 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dictionary.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="wrapper"></div>
+    <div class="wrapper">
+        <header>Dictionary</header>
+        <div class="search">
+            <input type="text" placeholder="Search a word" required>
+            <i class="fas fa-search"></i>
+            <span class="material-icons">close</span>
+        </div>
+        <p class="info-text">Type a word and press enter.</p>
+        <ul>
+            <li class="word">
+                <div class="details">
+                    <p>__</p>
+                    <span>__</span>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </li>
+            <div class="content">
+                <li class="example">
+                    <div class="details">
+                        <p>Example</p>
+                        <span>__</span>
+                    </div>
+                </li>
+                <li class="meaning">
+                    <div class="details">
+                        <p>Meaning</p>
+                        <span>__</span>
+                    </div>
+                </li>
+                <li class="synonyms">
+                    <div class="details">
+                        <p>Synonyms</p>
+                        <div class="list">
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <script src="dictionary.js"></script>
 </body>
 </html>
