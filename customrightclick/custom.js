@@ -23,3 +23,4 @@ document.addEventListener("contextmenu", e => {
     Menu.style.top = `${y}px`;
     Menu.style.visibility = "visible"
 });
+document.addEventListener("click", () => Menu.style.visibility = "hidden");
